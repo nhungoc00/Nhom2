@@ -9,7 +9,6 @@ body {
     font-family: "Segoe UI", sans-serif;
     background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
     margin: 0;
-    padding: 0;
 }
 
 /* ===== MENU ===== */
@@ -18,13 +17,13 @@ body {
     padding: 12px;
     position: sticky;
     top: 0;
-    z-index: 1000;
     text-align: center;
+    z-index: 1000;
 }
 .menu a {
     color: white;
-    text-decoration: none;
     margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
 }
 .menu a:hover {
@@ -34,7 +33,7 @@ body {
 /* ===== ẢNH BÌA ===== */
 .hero {
     height: 320px;
-    background-image: url("IMG_0887.jpeg");
+    background-image: url("IMG_0879.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -76,7 +75,6 @@ h1, h2 {
     gap: 20px;
     padding: 20px;
 }
-
 .card {
     background: white;
     padding: 15px;
@@ -116,7 +114,7 @@ h1, h2 {
     padding: 12px;
     background: #b8860b;
     color: white;
-    width: 200px;
+    width: 220px;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -156,6 +154,16 @@ h1, h2 {
         <div class="card-date">15-03-2008</div>
         <img src="IMG_0873.JPG">
     </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Phạm Nguyễn Kim Thơ</div>
+        <div class="card-date">12-08-2008</div>
+        <img src="IMG_0889.jpeg">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Trần Nam</div>
+        <div class="card-date">19-09-2008</div>
+        <img src="IMG_0893.jpeg">
+    </div>
 </div>
 
 <!-- DÃY BÀN 2 -->
@@ -165,6 +173,46 @@ h1, h2 {
         <div class="card-name">Trần Công Thành</div>
         <div class="card-date">09-03-2008</div>
         <img src="IMG_0891.jpeg">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Nguyễn Lê Phương Anh</div>
+        <div class="card-date">30-11-2008</div>
+        <img src="IMG_0888.jpeg">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Võ Nguyễn Ánh Như</div>
+        <div class="card-date">31-03-2008</div>
+        <img src="IMG_0880.JPG">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Phan Thị Thuý Vân</div>
+        <div class="card-date">19-11-2008</div>
+        <img src="IMG_0871.JPG">
+    </div>
+</div>
+
+<!-- DÃY BÀN 3 -->
+<div class="section-title">Dãy bàn 3</div>
+<div class="grid">
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Phạm Minh Tín</div>
+        <div class="card-date">20-10-2008</div>
+        <img src="IMG_0881.JPG">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Châu Nguyễn Như Ngọc</div>
+        <div class="card-date">23-02-2008</div>
+        <img src="IMG_9227.jpg">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Phạm Thị Anh Thư</div>
+        <div class="card-date">10-11-2008</div>
+        <img src="IMG_0875.JPG">
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-name">Trần Nguyễn Trường Đông</div>
+        <div class="card-date">18-11-2008</div>
+        <img src="IMG_0892.jpeg">
     </div>
 </div>
 
@@ -177,7 +225,7 @@ h1, h2 {
 </div>
 
 <!-- VIDEO -->
-<h2 id="video">Video hoạt động</h2>
+<h2 id="video">Video hoạt động của nhóm</h2>
 <div class="media-box">
     <video width="500" controls>
         <source src="1JCBPQ7L2_8K8TR8.mov">
@@ -192,7 +240,7 @@ h1, h2 {
 </div>
 
 <!-- IFRAME -->
-<h2 id="web">Khung nội tuyến</h2>
+<h2 id="web">Khung nội tuyến – Website</h2>
 <div class="media-box">
     <iframe width="600" height="400"
         src="https://www.wikipedia.org"></iframe>
