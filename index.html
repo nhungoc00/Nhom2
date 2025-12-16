@@ -36,32 +36,15 @@ body {
     position: relative;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    animation: fadeDown 1.5s ease;
 }
 
-.hero-content h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 18px;
-}
-
-/* ===== HIỆU ỨNG ===== */
 @keyframes zoomHero {
     from { transform: scale(1); }
     to { transform: scale(1.08); }
-}
-
-@keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 h1, h2 {
@@ -85,7 +68,7 @@ h1, h2 {
 
 /* CARD */
 .card {
-    background: #ffffff;
+    background: #fff;
     padding: 15px;
     border-radius: 15px;
     text-align: center;
@@ -97,7 +80,6 @@ h1, h2 {
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
 .card-name {
@@ -108,7 +90,6 @@ h1, h2 {
 .card-date {
     font-size: 14px;
     color: #777;
-    margin-top: 4px;
 }
 
 .card img {
@@ -120,7 +101,7 @@ h1, h2 {
     margin-top: 10px;
     opacity: 0;
     max-height: 0;
-    transition: 0.5s ease;
+    transition: 0.5s;
 }
 
 .card.show img {
@@ -146,9 +127,6 @@ h1, h2 {
     border-radius: 12px;
     text-decoration: none;
 }
-.back-top:hover {
-    background: #b8860b;
-}
 </style>
 </head>
 
@@ -157,8 +135,7 @@ h1, h2 {
 <!-- ẢNH BÌA -->
 <div class="hero">
     <div class="hero-content">
-        <p>Học để biết, học để làm, học để tự khẳng định mình, học để cùng chung sống.
-🌱</p>
+        <h1>GROUP 2</h1>
     </div>
 </div>
 
@@ -172,19 +149,16 @@ h1, h2 {
         <div class="card-date">16-04-2008</div>
         <img src="IMG_0872.JPG">
     </div>
-
     <div class="card" onclick="toggleCard(this)">
         <div class="card-name">Nguyễn Thảo Trinh</div>
         <div class="card-date">15-03-2008</div>
         <img src="IMG_0873.JPG">
     </div>
-
     <div class="card" onclick="toggleCard(this)">
         <div class="card-name">Phạm Nguyễn Kim Thơ</div>
         <div class="card-date">12-08-2008</div>
         <img src="IMG_0889.jpeg">
     </div>
-
     <div class="card" onclick="toggleCard(this)">
         <div class="card-name">Trần Nam</div>
         <div class="card-date">19-09-2008</div>
@@ -192,47 +166,52 @@ h1, h2 {
     </div>
 </div>
 
-<!-- BACK -->
-
-
-
 <!-- DÃY BÀN 2 -->
 <div class="section-title">Dãy bàn 2</div>
 <div class="grid">
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Trần Công Thành</div>     <div class="card-date">09-03-2008</div>
+        <div class="card-name">Trần Công Thành</div>
+        <div class="card-date">09-03-2008</div>
         <img src="IMG_0891.jpeg">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Nguyễn Lê Phương Anh</div>     <div class="card-date">30-11-2008</div>
+        <div class="card-name">Nguyễn Lê Phương Anh</div>
+        <div class="card-date">30-11-2008</div>
         <img src="IMG_0888.jpeg">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Võ Nguyễn Ánh Như</div>     <div class="card-date">31-03-2008</div>
+        <div class="card-name">Võ Nguyễn Ánh Như</div>
+        <div class="card-date">31-03-2008</div>
         <img src="IMG_0880.JPG">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Phan Thị Thuý Vân</div>     <div class="card-date">19-11-2008</div>
+        <div class="card-name">Phan Thị Thuý Vân</div>
+        <div class="card-date">19-11-2008</div>
         <img src="IMG_0871.JPG">
     </div>
+</div>
 
 <!-- DÃY BÀN 3 -->
 <div class="section-title">Dãy bàn 3</div>
 <div class="grid">
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Phạm Minh Tín</div>     <div class="card-date">20-10-2008</div>
+        <div class="card-name">Phạm Minh Tín</div>
+        <div class="card-date">20-10-2008</div>
         <img src="IMG_0881.JPG">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Châu Nguyễn Như Ngọc</div>     <div class="card-date">23-02-2008</div>
+        <div class="card-name">Châu Nguyễn Như Ngọc</div>
+        <div class="card-date">23-02-2008</div>
         <img src="IMG_9227.jpg">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Phạm Thị Anh Thư</div>     <div class="card-date">10-11-2008</div>
+        <div class="card-name">Phạm Thị Anh Thư</div>
+        <div class="card-date">10-11-2008</div>
         <img src="IMG_0875.JPG">
     </div>
     <div class="card" onclick="toggleCard(this)">
-        <div class="card-name">Trần Nguyễn Trường Đông</div>     <div class="card-date">18-11-2008</div>
+        <div class="card-name">Trần Nguyễn Trường Đông</div>
+        <div class="card-date">18-11-2008</div>
         <img src="IMG_0892.jpeg">
     </div>
 </div>
@@ -240,35 +219,20 @@ h1, h2 {
 <hr>
 
 <!-- ẢNH TẬP THỂ -->
-<h2>ẢNH TẬP THỂ Group  2 </h2>
+<h2>ẢNH TẬP THỂ GROUP 2</h2>
 <div class="media-box">
-    <img src="anhtapthe_0882.jpg"width="400" height="300"
-         style="border-radius:10px; border:4px solid #d4af37;">
+    <a href="https://tuyensinhso.vn/tuyen-sinh-247.html" target="_blank">
+        <img src="anhtapthe_0882.jpg" width="400" height="300"
+             style="border-radius:10px; border:4px solid #d4af37;">
+    </a>
 </div>
 
-<!-- VIDEO HOẠT ĐỘNG -->
+<!-- VIDEO -->
 <h2>Video hoạt động của nhóm</h2>
-<div style="text-align:center;">
-  <video width="640" controls style="border-radius:12px;">
-    <source src="1JCBPQ7L2_8K8TR8.mov">
-  </video>
-</div>
-<!-- VIDEO LINK (ĐÃ THAY ĐÚNG LINK BẠN GỬI) -->
-<h2>Video truyền động lực</h2>
 <div class="media-box">
-    <iframe width="400" height="300"
-            src="https://www.youtube.com/embed/lc_ecS1NpdA"
-            style="border-radius:10px; border:4px solid #d4af37;"
-            allowfullscreen>
-    </iframe>
-</div>
-
-<!-- IFRAME -->
-<h2>Khung nội tuyến – Trang web bất kỳ</h2>
-<div class="media-box">
-    <iframe width="600" height="500"
-            src="https://www.wikipedia.org"
-            style="border-radius:12px; border:5px solid #b8860b;"></iframe>
+    <video width="640" controls>
+        <source src="1JCBPQ7L2_8K8TR8.mov">
+    </video>
 </div>
 
 <a href="#top" class="back-top">Quay về đầu trang</a>
@@ -281,7 +245,3 @@ function toggleCard(card) {
 
 </body>
 </html>
-
-
-
-
