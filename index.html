@@ -22,14 +22,13 @@ body {
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
-    animation: zoomHero 10s infinite alternate ease-in-out;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.45);
 }
 
 .hero-content {
@@ -40,13 +39,15 @@ body {
     align-items: center;
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
-@keyframes zoomHero {
-    from { transform: scale(1); }
-    to { transform: scale(1.08); }
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
 }
 
+/* ===== TIÊU ĐỀ ===== */
 h1, h2 {
     text-align: center;
     color: #333;
@@ -59,16 +60,16 @@ h1, h2 {
     color: #b8860b;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .card {
-    background: #fff;
+    background: #ffffff;
     padding: 15px;
     border-radius: 15px;
     text-align: center;
@@ -101,7 +102,7 @@ h1, h2 {
     margin-top: 10px;
     opacity: 0;
     max-height: 0;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .card.show img {
@@ -109,10 +110,10 @@ h1, h2 {
     max-height: 200px;
 }
 
-/* MEDIA */
+/* ===== MEDIA ===== */
 .media-box {
     text-align: center;
-    margin: 25px 0;
+    margin: 30px 0;
 }
 
 .back-top {
@@ -127,15 +128,21 @@ h1, h2 {
     border-radius: 12px;
     text-decoration: none;
 }
+.back-top:hover {
+    background: #b8860b;
+}
 </style>
 </head>
 
 <body id="top">
 
-<!-- ẢNH BÌA -->
+<!-- ===== ẢNH BÌA ===== -->
 <div class="hero">
     <div class="hero-content">
-        <h1>GROUP 2</h1>
+        <p>
+            Học để biết, học để làm, học để tự khẳng định mình,<br>
+            học để cùng chung sống 🌱
+        </p>
     </div>
 </div>
 
@@ -218,7 +225,7 @@ h1, h2 {
 
 <hr>
 
-<!-- ẢNH TẬP THỂ -->
+<!-- ===== ẢNH TẬP THỂ + LINK ===== -->
 <h2>ẢNH TẬP THỂ GROUP 2</h2>
 <div class="media-box">
     <a href="https://tuyensinhso.vn/tuyen-sinh-247.html" target="_blank">
@@ -227,12 +234,31 @@ h1, h2 {
     </a>
 </div>
 
-<!-- VIDEO -->
+<!-- ===== VIDEO HOẠT ĐỘNG ===== -->
 <h2>Video hoạt động của nhóm</h2>
 <div class="media-box">
-    <video width="640" controls>
+    <video width="640" controls style="border-radius:12px;">
         <source src="1JCBPQ7L2_8K8TR8.mov">
     </video>
+</div>
+
+<!-- ===== VIDEO LINK ===== -->
+<h2>Video truyền động lực</h2>
+<div class="media-box">
+    <iframe width="400" height="300"
+            src="https://www.youtube.com/embed/lc_ecS1NpdA"
+            style="border-radius:10px; border:4px solid #d4af37;"
+            allowfullscreen>
+    </iframe>
+</div>
+
+<!-- ===== KHUNG NỘI TUYẾN ===== -->
+<h2>Khung nội tuyến – Trang web bất kỳ</h2>
+<div class="media-box">
+    <iframe width="600" height="500"
+            src="https://www.wikipedia.org"
+            style="border-radius:12px; border:5px solid #b8860b;">
+    </iframe>
 </div>
 
 <a href="#top" class="back-top">Quay về đầu trang</a>
